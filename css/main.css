@@ -1,0 +1,606 @@
+/*
+theme name is :Media
+theme coder and design:Osama Askar
+date :23-11-2018
+
+*/
+/*Start Global */
+body{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+.section{
+    padding: 50px;
+}
+.section-title{
+	font-size: 35px;
+    color: #fff;
+	margin-bottom: 15px;
+}
+.section-line{
+	background-color: #ddd;
+	width:150px;
+	height: 2px;
+	margin:auto;
+	margin-bottom: 15px;
+}
+.section-line span{
+	display: block;
+	width: 50px;
+	height: 4px;
+	background-color:#f00;
+	margin: auto;
+	position: relative;
+	bottom:2px;
+}
+.section-description{
+	color:#888;
+	max-width:400px;
+	margin: auto;
+	line-height: 1.7;
+	margin-bottom: 20px;
+}
+.b-active{
+	transform: scale(.8);
+    background-color: aqua;
+    border-radius: 5px;
+}
+
+/*End global */
+/*Start Navbar */
+
+.navbar .navbar-brand{
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color:#fff;
+}
+.navbar .nav-item .nav-link{
+    margin-right: 15px;
+    color:#fff;
+    position: relative;
+}
+.navbar .nav-item .nav-link:before{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    top: 40px;
+    left: 5px;
+    background-color: #f00;
+    transition: .5s;
+}
+.navbar .nav-item .nav-link:hover{
+    color:#ff0;
+}
+.navbar .nav-item .nav-link:hover:before{
+    width:100%;
+}
+.navbar .navbar-brand:hover{
+    color:#ff0;
+}
+.navbar .nav-item .login{
+    color:#ff0;
+}
+
+/*End Navbar */
+/*Start Slider */
+.slider{
+    position: relative;
+    background: url("../images/pexels-photo-378152.jpeg");
+    -webkit-background-size: cover;
+    -moz- background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.slider .container{
+    position: relative;
+    z-index: 4;
+}
+.slider .carousel-caption{
+    top: 50%;
+    margin-top: -50px;
+}
+.slider .carousel-caption h3{
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.slider .carousel-caption p{
+    margin-bottom: 30px;
+}
+.slider .carousel-caption a{
+    margin-bottom: 60px;
+}
+.slider .carousel-caption i{
+    display: block;
+    font-size: 35px;
+}
+.slider .carousel-indicators li{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+}
+.slider .carousel-indicators li:before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background-color: #007bff;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(.4);
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(13, 70, 76, 0.92);
+    z-index: 2;
+}
+/*End Slider */
+/*Start Student */
+.student{
+    position: relative;
+    padding: 50px;
+    background-image: url(../images/pexels-photo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:#fff;
+    
+}
+.student:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(9, 15, 35, 0.89);
+}
+
+.student .student-content{
+    position: relative;
+    z-index:3;
+}
+.student .student-content .student-title{
+    margin-bottom: 15px;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.student .student-content .student-desc{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.student .student-content .student-line{
+    width:160px;
+    height: 2px;
+    background-color: #007bff;
+    margin: auto;
+}
+.student .student-content .student-line .student-circle{
+    margin: auto;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ff0;
+    display: block;
+    position: relative;
+    top: -4px;
+}
+.student-work {
+    position: relative;
+    z-index:6;
+}
+.student .student-work .student-main{
+    padding: 10px;
+    background-color: #c3bcbc;
+    border: 4px solid #fff;
+    position: relative;
+    margin-bottom: 10px;
+    
+}
+.student .student-work .student-main:hover img{
+    transform: scale(.6);
+    
+}
+.student .student-work .student-photo img{
+    width:100%;
+    transition: all 1s ease-in-out;
+}
+.student .student-work .student-photo{
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #666
+}
+.student .student-work .student-main .ribbon{
+    position: absolute;
+    width:150px;
+    height: 150px;
+    overflow: hidden; 
+    top: -10px;
+    left: -10px;
+}
+.student .student-work .student-main .ribbon::before,
+.student .student-work .student-main .ribbon::after{
+    position: absolute;
+    z-index: -1;
+    content: '';
+    display: block;
+    border: 5px solid #2980b9;
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+.ribbon span {
+  position: absolute;
+  display: block;
+  width: 225px;
+  padding: 10px 0;
+  background-color: #007bff;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  color: #fff;
+  font: 700 18px/1 'Lato', sans-serif;
+  text-shadow: 0 1px 1px rgba(0,0,0,.2);
+  text-transform: uppercase;
+  text-align: center;
+  right: -25px;
+  top: 30px;
+  transform: rotate(-45deg);
+}
+.student .student-work .student-main .ribbon::before{
+    top: 0;
+    right: 12px;
+}
+.student .student-work .student-main .ribbon::after{
+    bottom: 12px;
+    left: 0;
+}
+.student .student-work .btn {
+    display: block;
+    position: relative;
+    border-radius: 0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background-color: #ff0;
+    border-color: #ff0;
+    color:#007bff;   
+}
+/*End Student */
+/*Start About Projects*/
+.about{
+    position: relative;
+    padding: 50px;
+    background-image: url(../images/pexels-photo-462030.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:#fff;
+    
+}
+.about::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(9, 15, 35, 0.89);
+    
+}
+.about .about-content{
+    position: relative;
+    z-index:3;
+}
+.about .about-content .about-title{
+    margin-bottom: 15px;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.about .about-content .about-desc{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+.about .about-content .about-line{
+    width:160px;
+    height: 2px;
+    background-color: #007bff;
+    margin: auto;
+}
+.about .about-content .about-line .about-circle{
+    margin: auto;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ff0;
+    display: block;
+    position: relative;
+    top: -4px;
+}
+.about .about-media{
+    position: relative;
+    z-index: 6
+}
+.about .about-media i{
+    font-size: 60px;
+    color:#007bff;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    margin-bottom: 20px;
+}
+.about .about-media i:hover{
+    color:#ff0
+}
+.about .about-media h3{
+    color:#ff0
+}
+/*End About Projects*/
+/*Start Sections*/
+.sections{
+    padding: 50px;
+    background-color: rgba(9, 15, 35, 0.89);
+}
+.sections .sections-content .sections-title{
+    margin-bottom: 15px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color:#fff;
+}
+.sections .sections-content .sections-line{
+    width:160px;
+    height: 2px;
+    background-color: #007bff;
+    margin: auto;
+    margin-bottom: 30PX;
+}
+.sections .sections-content .sections-line .sections-circle{
+    margin: auto;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ff0;
+    display: block;
+    position: relative;
+    top: -4px;
+}
+.sections .sections-desc{
+    background-color: #007bff;
+    padding: 30px;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+.sections .swiper-container {
+    width: 300px;
+    height: 300px;
+    position: relative;  
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+}
+@media(max-width:768px) {
+    .sections .swiper-container{
+        height: 200px;
+        margin-top: 0;
+        top: 10%;
+       
+    }
+}
+@media(max-width:525px){
+    .sections .swiper-container{
+        left:54%;
+    }
+}
+.sections .swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+.sections .watch1{
+    background-image: url("../images/pexels-photo-277319.jpeg");
+}
+.sections .watch2{
+    background-image: url("../images/accessory-analog-classic-84475.jpg");
+}
+.sections .watch3{
+    background-image: url("../images/pexels-photo-190819.jpeg");
+}
+.sections .watch4{
+    background-image: url("../images/pexels-photo-125779.jpeg");
+}
+.sections .watch5{
+    background-image: url("../images/pexels-photo-277390.jpeg");
+}
+.sections .swiper-pagination-bullet-active{
+    background-color: #ff0;
+}
+/*End Sections*/
+/*Start Contact*/
+.contact{
+    position: relative;
+    padding: 50px;
+    background-image: url(../images/pexels-photo-462030.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:#fff;
+}
+.contact::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(9, 15, 35, 0.89);
+}
+.contact .contact-content{
+    position: relative;
+    z-index:3;
+}
+.contact .contact-content .contact-title{
+    margin-bottom: 15px;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.contact .contact-content .contact-desc{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+.contact .contact-content .contact-line{
+    width:160px;
+    height: 2px;
+    background-color: #007bff;
+    margin: auto;
+}
+.contact .contact-content .contact-line .contact-circle{
+    margin: auto;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ff0;
+    display: block;
+    position: relative;
+    top: -4px;
+}
+.contact .contact-details{
+    margin-top:50px;
+}
+.contact .contact-details img{
+    width:100%;
+    margin-bottom: 20px;
+}
+.contact .contact-details .form-group{
+    position: relative;
+    
+}
+.contact .contact-details .form-group input{
+    border:none;
+    box-shadow: none;
+    outline: none;
+    border-bottom: 2px solid #ff0;
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+.contact .contact-details .form-group textarea{
+    border:none;
+    box-shadow: none;
+    outline: none;
+    border-bottom: 2px solid #ff0;
+    border-radius: 0;
+}
+.contact .contact-details .form-group i{
+    margin-right: 10px;
+}
+.contact .contact-details .form-group label:first-of-type{
+    position: absolute;
+    color: #007bff;
+    top: 5px;
+    left: 5px;
+}
+.contact .contact-details .form-group .mail{
+    position: absolute;
+    color: #007bff;
+    top: 64px;
+    left: 5px;
+}
+.contact .contact-details .form-group .mess{
+    position: absolute;
+    color: #007bff;
+    top: 131px;
+    left: 5px;
+}
+.contact .social ul{
+    display: flex;
+}
+@media(max-width:568px){
+    .contact .social ul{
+        display: block;
+        
+    }
+    .contact .social ul li a{
+        margin: 6px 10px;
+    }
+}
+.contact .social ul li a{
+    position: relative;
+    background:linear-gradient(0deg,#ddd,#fff);
+    display:block;
+    margin: 0 10px;
+    border-radius: 50%;
+    padding: 6px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    box-shadow:0 10px 15px rgba(220, 234, 4, 0.3);
+    transition: .5s;
+    color:#007bff;
+    text-decoration: none;
+}
+@media(min-width:576px) and(max-width:767.98px){
+    .contact .social ul li a{
+        margin: 6 1px;
+    }
+}
+.contact .social ul li a:hover{
+     box-shadow:0 5px 10px rgba(200, 230, 4, 0.3);
+}
+.contact .social ul li a i{
+    width:100%;
+    height: 100%;
+    display: block;
+    background:linear-gradient(0deg,#fff,#ddd);
+    border-radius: 50%;
+    line-height: 44px;
+    font-size: 24px;
+    color:#262626;
+    transition: all .5s ease-in-out;
+}
+.contact .social ul li:nth-child(1) a:hover i{
+    color:#365899;
+}
+.contact .social ul li:nth-child(2) a:hover i{
+    color:#db4437;
+}
+.contact .social ul li:nth-child(3) a:hover i{
+    color:#1da1f2;
+}
+.contact .social ul li:nth-child(4) a:hover i{
+    color:#c32aa3;
+}
+
+/*End Contact*/
+/*Start Copy*/
+.copy{
+    padding: 40px;
+    background-color: #24293b;
+    color:#fff;
+}
+/*End Copy*/
+
+
+
+
+
+
+
+
+
+
+
+
